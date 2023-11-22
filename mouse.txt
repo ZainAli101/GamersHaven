@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse</title>
+    <style>
+        /* Background styles with gradient */
+        body {
+            background: linear-gradient(to bottom, green, black);
+            color: white; /* Set text color to white */
+        }
+    </style>
+</head>
+
+   
+
+  <style>
+
+
+        body {
+            margin: 0; /* Remove default margin to ensure the background covers the entire viewport */
+            background: linear-gradient(90deg, red, black); /* Red to black gradient */
+            color: #fff; /* Text color on top of the background */
+        }
+
+        .page-container {
+            padding: 20px; /* Add some padding to the content for spacing */
+        }
+
+        h1 {
+            font-family: 'Gameria',Gameria; /* Replace with the actual font name */
+            text-align: center; /* Align the text to the center */
+            font-size: 36px; /* Adjust the font size as needed */
+        }
+
+        /* Style the gaming company logos */
+        .logos {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .logos img {
+            max-height: 40px;
+            margin: 0 10px;
+        }
+
+        /* Style the hyperlinks */
+        .menu {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+    
+        /* CSS for the cart */
+        .cart {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+
+        .cart img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .cart-content {
+            display: none;
+            position: absolute;
+            top: 40px;
+            right: 0;
+            background-color: #000000;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+            border: 1px solid #ddd;
+            padding: 10px;
+            z-index: 1;
+        }
+
+        .cart-items {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .cart-items li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML structure for the cart -->
+    <div class="cart">
+        <img src="C:\Users\Zain\OneDrive\Desktop\Gaming Store\icon.png" alt="Cart Icon">
+        <div class="cart-content">
+            <h3>Cart</h3>
+            <ul class="cart-items">
+                <!-- Cart items will be added dynamically via JavaScript -->
+            </ul>
+  <button class="checkout-button" id="checkout-button">Proceed to Checkout</button>
+        <form class="checkout-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="productName">Product Name:</label>
+            <input type="text" id="productName" name="productName" required><br>
+
+ <label for="email">Your Email:</label>
+    <input type="email" id="email" name="email" required><br>
+
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea><br>
+
+            <button type="button" id="submit-order">Submit Order</button>
+        </form>
+    </div>
+</div>
+     
+
+
+  <h1>Mouse</h1>
+
+    <!-- Keyboard product listing -->
+   <h2>Havit MS1003 RGB Gaming Mouse</h2>	
+     <section class="product-details">
+        <img src="C:\Users\Zain\OneDrive\Desktop\Gaming Store\havit-ms1003-mouse-price-in-pakistan-1-19643-691432-190223085231526-removebg-preview.png" alt="Keyboard Image" width="200" height="200">
+        <h2>Product Description</h2>
+        <p>5-Zone Dynamic RGB Backlighting, Six Macro Keys with Stream Deck Integration, IP42 Dust and Spill Resistant, Dedicated Media Keys</p>
+        <h2>Features</h2>
+        <ul>
+            <li>Cool Side RGB Lighting</li>
+            <li>Cool RGB Lighting</li>
+            <li>DPI Switching Function</li>
+        </ul>
+<h3>Price: $35.99</h3>
+        <button class="add-to-cart" data-description="Havit MS1003="$35.99">Add to Cart</button>
+<button class="buy-now">Buy Now</button>
+<div class="quantity-container">
+            <button class="quantity-minus">-</button>
+            <input type="number" class="quantity-input" value="0" min="0">
+            <button class="quantity-plus">+</button>
+        </div>
+    </div>
+
+<h3>Havit KB866L RGB Membrane Gaming Keyboard</h3>
+     <section class="product-details">
+        <img src="C:\Users\Zain\OneDrive\Desktop\Gaming Store\havit-kb866l-keyboard-price-in-pakistan-2-19643-691368-220723062933050-removebg-preview.png" alt="Keyboard Image" width="200" height="200">
+        <h2>Product Description</h2>
+        <p>Havit KB866L Multi-Function USB Backlit Gaming Keyboard comes with 112 Button. It has a 1.5-meter long cable. It delivers key life of 10,000,000 times (keyboard). It has Anti-Ghosting: N Key Rollover.</p>
+        <h2>Features</h2>
+         <ul>
+            <li>Eye-Catching Gaming Design</li>
+            <li>19 Anti-Ghosting Keys</li>
+            <li>Fn Multimedia Keys</li>
+        </ul>
+        <h3>Price: $12.99</h3>
+        <button class="add-to-cart" data-description="Havit KB866L " data-price="$12.99">Add to Cart</button>
+        <div class="quantity-container">
+            <button class="quantity-minus">-</button>
+            <input type="number" class="quantity-input" value="0" min="0">
+            <button class="quantity-plus">+</button>
+        </div>
+        <button class="buy-now">Buy Now</button>
+    </div>
+
+                                                     
+
+
+
+
+
+
+
+
+
+
+ <h2>Inphic V950 RGB Backlit Mechanical Gaming Keyboard</h2>
+     <section class="product-details">
+        <img src="C:\Users\Zain\OneDrive\Desktop\Gaming Store\inhpic-v950-mechanical-keyboard-1-price-in-pakistan-2-19643-0-181222070653786-removebg-preview.png" alt="Keyboard Image" width="200" height="200">
+        <h2>Product Description</h2>
+        <p>The rotation knob can easily control volume and keyboard lighting effect. Each key has an independent mechanical shaft body to realize the smooth game experience.</p>
+        <h2>Features</h2>
+         <ul>
+            <li>Cool Colorful RGB Backlight</li>
+            <li>Black Metal Panel</li>
+            <li>Individual Key Blue Switch</li>
+        </ul>
+        <h3>Price: $58.14</h3>
+         <button class="add-to-cart" data-description="Inphic V950" data-price=" $58.14">Add to Cart</button>
+        <div class="quantity-container">
+            <button class="quantity-minus">-</button>
+            <input type="number" class="quantity-input" value="0" min="0">
+            <button class="quantity-plus">+</button>
+        </div>
+        <button class="buy-now">Buy Now</button>
+    </div>
+
+    <!-- Your other product listings go here -->
+
+    <!-- Cart HTML -->
+    <div class="cart">
+        <img src="C:\Users\Zain\OneDrive\Desktop\Gaming Store\icon.png" alt="Cart Icon">
+        <div class="cart-content">
+<button class="checkout-button" id="checkout-button">Proceed to Checkout</button>
+
+            <h3>Cart</h3>
+            <ul class="cart-items">
+
+
+
+
+                <!-- Cart items will be added dynamically via JavaScript -->
+            </ul>
+        </div>
+    </div>
+
+
+
+    <script>
+        // JavaScript for quantity input
+        const quantityInputs = document.querySelectorAll('.quantity-input');
+        const quantityPlusButtons = document.querySelectorAll('.quantity-plus');
+        const quantityMinusButtons = document.querySelectorAll('.quantity-minus');
+
+        quantityPlusButtons.forEach((button, index) => {
+            button.addEventListener('click', () => {
+                quantityInputs[index].stepUp();
+            });
+        });
+
+        quantityMinusButtons.forEach((button, index) => {
+            button.addEventListener('click', () => {
+                if (quantityInputs[index].value > 0) {
+                    quantityInputs[index].stepDown();
+                }
+            });
+        });
+
+        // JavaScript for adding products to the cart
+        const addToCartButtons = document.querySelectorAll('.add-to-cart');
+        const cartItemsList = document.querySelector('.cart-items');
+        const cartContent = document.querySelector('.cart-content');
+
+        addToCartButtons.forEach((button, index) => {
+            button.addEventListener('click', () => {
+                const productDescription = button.getAttribute('data-description');
+                const productPrice = parseFloat(button.getAttribute('data-price'));
+                const productQuantity = parseInt(quantityInputs[index].value);
+
+                if (productQuantity > 0) {
+                    // Calculate the total price for the quantity specified
+                    const totalPrice = (productPrice * productQuantity).toFixed(2);
+
+                    // Create a new cart item element
+                    const cartItem = document.createElement('li');
+                    const cartItemText = document.createElement('span');
+                    cartItemText.textContent = `${productDescription} - $${totalPrice} (Qty: ${productQuantity})`;
+                    cartItem.appendChild(cartItemText);
+
+                    // Create a "Remove from Cart" button for the cart item
+                    const removeButton = document.createElement('button');
+                    removeButton.textContent = 'Remove from Cart';
+                    removeButton.classList.add('remove-from-cart');
+
+                    // Add an event listener to remove the item when the button is clicked
+                    removeButton.addEventListener('click', () => {
+                        cartItemsList.removeChild(cartItem);
+                        if (cartItemsList.children.length === 0) {
+                            cartContent.style.display = 'none';
+                        }
+                    });
+
+                    // Append the "Remove from Cart" button to the cart item
+                    cartItem.appendChild(removeButton);
+
+                    // Add the cart item to the cart
+                    cartItemsList.appendChild(cartItem);
+
+                    // Show the cart content
+                    cartContent.style.display = 'block';
+                }
+            });
+        });
+    </script>
+  <script>
+        // JavaScript for quantity input
+        const quantityInputs = document.querySelectorAll('.quantity-input');
+        const quantityPlusButtons = document.querySelectorAll('.quantity-plus');
+        const quantityMinusButtons = document.querySelectorAll('.quantity-minus');
+
+        quantityPlusButtons.forEach((button, index) => {
+            button.addEventListener('click', () => {
+                quantityInputs[index].stepUp();
+            });
+        });
+
+        quantityMinusButtons.forEach((button, index) => {
+            button.addEventListener('click', () => {
+                if (quantityInputs[index].value > 0) {
+                    quantityInputs[index].stepDown();
+                }
+            });
+        });
+
+        // JavaScript for adding products to the cart
+        const addToCartButtons = document.querySelectorAll('.add-to-cart');
+        const cartItemsList = document.querySelector('.cart-items');
+        const cartContent = document.querySelector('.cart-content');
+        const checkoutButton = document.querySelector('.checkout-button');
+        const checkoutForm = document.querySelector('.checkout-form');
+
+        addToCartButtons.forEach((button, index) => {
+            button.addEventListener('click', () => {
+                const productDescription = button.getAttribute('data-description');
+                const productPrice = parseFloat(button.getAttribute('data-price'));
+                const productQuantity = parseInt(quantityInputs[index].value);
+
+                if (productQuantity > 0) {
+                    // Calculate the total price for the quantity specified
+                    const totalPrice = (productPrice * productQuantity).toFixed(2);
+
+                    // Create a new cart item element
+                    const cartItem = document.createElement('li');
+                    const cartItemText = document.createElement('span');
+                    cartItemText.textContent = `${productDescription} - $${totalPrice} (Qty: ${productQuantity})`;
+                    cartItem.appendChild(cartItemText);
+
+                    // Create a "Remove from Cart" button for the cart item
+                    const removeButton = document.createElement('button');
+                    removeButton.textContent = 'Remove from Cart';
+                    removeButton.classList.add('remove-from-cart');
+
+                    // Add an event listener to remove the item when the button is clicked
+                    removeButton.addEventListener('click', () => {
+                        cartItemsList.removeChild(cartItem);
+                        if (cartItemsList.children.length === 0) {
+                            cartContent.style.display = 'none';
+                            checkoutButton.style.display = 'none';
+                        }
+                    });
+
+                    // Append the "Remove from Cart" button to the cart item
+                    cartItem.appendChild(removeButton);
+
+                    // Add the cart item to the cart
+                    cartItemsList.appendChild(cartItem);
+
+                  
+                    // Show the cart content and checkout button
+                    cartContent.style.display = 'block';
+                    checkoutButton.style.display = 'block';
+                }
+            });
+        });
+const express = require('express');
+const bodyParser = require('body-parser');
+const nodemailer = require('nodemailer');
+
+const app = express();
+const port = 3000;
+
+app.use(bodyParser.urlencoded({ extended: false }));
+
+// Handle the order submission
+app.post('/submit-order', (req, res) => {
+    // Extract form data
+    const { name, productName, address } = req.body;
+
+    // Perform data validation here if needed
+
+    // Process the order (e.g., save to a database)
+
+    // Send order confirmation email
+    sendOrderConfirmationEmail(name, productName, address);
+
+    // Respond to the client
+    res.status(200).send('Order submitted successfully.');
+});
+
+// Function to send an order confirmation email
+function sendOrderConfirmationEmail(name, productName, address) {
+    const transporter = nodemailer.createTransport({
+        service: 'Gmail',
+        auth: {
+            user: 'your-email@gmail.com',
+            pass: 'your-email-password'
+        }
+    });
+
+    const mailOptions = {
+        from: 'your-email@gmail.com',
+        to: 'thezainali101@gmail.com',
+        subject: 'New Order',
+        text: `Name: ${name}\nProduct Name: ${productName}\nAddress: ${address}`
+    };
+
+    transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+            console.error('Error sending email:', error);
+        } else {
+            console.log('Email sent:', info.response);
+        }
+    });
+}
+
+app.listen(port, () => {
+    console.log(`Server is running on port ${port}`);
+});
+
+     
+</body>
+</html>
